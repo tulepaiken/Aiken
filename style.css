@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html, body, *{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #212733;
+}
+
+header{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  height: 80px;
+}
+
+header .menu{
+  width: 1200px;
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+header li{
+  list-style-type: none;
+}
+
+header a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.intro{
+  background-image: url('./images/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro h1{
+  font-size: 64px;
+  font-weight: bold;
+  color: #212733;
+  margin-top: 200px;
+}
+
+.intro .slogan{
+  font-size: 24px;
+  color: #FBFBFB;
+  margin-top: 69px;
+  background-color: #6C5858;
+  width: 414px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.intro-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro button{
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #212733;
+  height: 76px;
+  width: 351px;
+  margin-top: 61px;
+  border: none;
+}
+
+.aims{
+  background-color: #ffffff;
+  padding-top: 57px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+}
+
+.aims h1{
+  color: #212733;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.aims-wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aim{
+  display: flex;
+  justify-content: space-between;
+  background-color: #272B36;
+  align-items: center;
+}
+
+.text{
+  text-align: center;
+}
+
+.text:nth-child(2n){
+  margin-right: 94px;
+}
+
+.text:nth-child(2n+1){
+  margin-left: 94px;
+}
+
+.aim img{
+  width: 626px;
+  height: 376.64px;
+}
+
+.aim h1{
+  font-size: 48px;
+  color: #fff;
+}
+
+.aim p{
+  font-size: 36px;
+  color: #fff;
+}
+
+.purpose{
+  height: 300px;
+}
+
+.purpose h1{
+  font-size: 72px;
+  text-align: center;
+  margin-top: 72px;
+  color: #fff;
+}
+
+.purpose p{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: 67px;
+}
+blockquote {
+	font-family: Georgia,Times New Roman,serif;
+	background-color: #212733;
+	font-size: 1.1em;
+	color: #cccccc;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+#connect{
+    background-color: #212733;
+    width:500px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+input[type="text"] {
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  color: #74706C;
+  border-style: none;
+  background-color: #D8D0C8;
+  margin: 10px;
+}
+
+input[type="text"]:focus{
+  outline: none;
+  background-color: #C8C0B8;
+  color: #3A3836;
+}
+textarea{
+  resize: none;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  color: #74706C;
+  border-style: none;
+  background-color: #D8D0C8;
+  margin: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea:focus{
+  outline: none;
+  background-color: #C8C0B8;
+  color: #3A3836;
+}
+
+button[type="submit"]{
+  background: none;
+  border: none;
+  color: #182028;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  font-weight: bolder;
+}
+
+#contacts{
+  margin-left: 800px;
+  
+  margin-top: -400px;
+}
+
+#team{
+position: absolute;
+width: 1500px;
+height: 853px;
+left: 0px;
+top: 150px;
+background-image: url('prof.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: black;
+        width: 90%;
+        height: 400px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#empl{
+    position: absolute;
+    top:600px;
+    left: 200px;
+    
+}
+.emplo{
+    border-spacing: 50px 20px;
+}
+
+#help{
+     position: absolute;
+    top:1040px;
+    left: 500px;
+    text-align: center;
+}
+/* Кнопка, используемая для открытия контактной формы - фиксируется в нижней части страницы */
+.open-button {
+  background-color: #f0efeb;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.9;
+  width: 280px;
+  font-size: 20px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Добавить стили для контейнера формы */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+/*help button*/
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top:1000px;
+  left: 500px;
+  width: 280px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup1 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Добавить стили для контейнера формы */
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container1 input[type=text], .form-container1 input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container1 input[type=text]:focus, .form-container1 input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.form-container1 .btn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container1 .cancel {
+  background-color: red;
+}
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+footer{
+	background-color: #212733;
+	color: white;
+	text-align: center;
+	margin: auto;
+	font-family: Open Sans;
+
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top:200px;
+  left: 650px;
+  width: 280px;
+  margin-top: 50%;
+}
+p{
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1em;
+ font-style: italic;
+
+
+}

@@ -1,0 +1,378 @@
+body{/*
+position: relative;*/
+/*width: 1634px;
+height: 7063px;*/
+margin: 0;
+padding: 0;
+background: white;
+position: relative;
+
+}
+#header{
+background: #212733;
+padding: 37px;
+}
+
+.logopicture{
+position: absolute;
+width: 100px;
+height: 50px;
+margin-top: 0.5%;
+font-family: Signika;
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 70px;
+text-align: center;
+letter-spacing: 0.2em;
+color: #000000;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+     margin: 0 10px;
+   } 
+
+#nav{
+position: absolute;
+width: 1300px;
+height: 70px;
+left: 30px;
+top: 75px;
+font-family: Signika;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 0.095em;
+color: #000000;
+}
+nav a:hover{
+  background-color: #8e99ad;
+  transition: .75s;
+  opacity: 0.3;
+  color: white;
+}
+
+
+li{
+   list-style-type: none; 
+      display: inline;
+}
+{box-sizing: border-box;}
+#photos{
+position: absolute;
+width: 1150px;
+height: 500px;
+left: 200px;
+top: 150px;
+background: url(photo/close-up-young-attractive-charismatic-woman-isolated_273609-35349.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+ font-family: Arail;
+ opacity: 0.5;
+ text-align: center;
+
+}
+h3{
+  text-align: center;
+  margin-top: 500px;
+ /* margin-left: 200px;*/
+}
+.don{
+	margin-top: 15%;
+	margin-left: 12%;
+}
+.s1{
+	margin-top: -125%;
+	margin-left: 13%;
+}
+.s2{
+	margin-top: 10%;
+	margin-left: 20%;
+}
+.s3{
+	margin-top: 15%;
+	margin-left: 20%;
+}
+.s4{
+	margin-top: 15%;
+	margin-left: 76%;
+}
+.s5{
+	margin-top: 10%;
+	margin-left: 13%;
+}
+.s6{
+		margin-top: 12%;
+	margin-left: 10%;
+}
+.s7{
+	margin-top: 17%;
+	margin-left: 20%;
+}
+blockquote {
+	font-family: Georgia,Times New Roman,serif;
+	background-color: #212733;
+	font-size: 1.1em;
+	color: #cccccc;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+#connect{
+    background-color: #212733;
+    width:500px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+input[type="text"] {
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  color: #74706C;
+  border-style: none;
+  background-color: #D8D0C8;
+  margin: 10px;
+}
+
+input[type="text"]:focus{
+  outline: none;
+  background-color: #C8C0B8;
+  color: #3A3836;
+}
+textarea{
+  resize: none;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  color: #74706C;
+  border-style: none;
+  background-color: #D8D0C8;
+  margin: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea:focus{
+  outline: none;
+  background-color: #C8C0B8;
+  color: #3A3836;
+}
+
+button[type="submit"]{
+  background: none;
+  border: none;
+  color: #182028;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  font-weight: bolder;
+}
+
+#contacts{
+  margin-left: 800px;
+  
+  margin-top: -400px;
+}
+
+#team{
+position: absolute;
+width: 1500px;
+height: 853px;
+left: 0px;
+top: 150px;
+background-image: url('prof.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: black;
+        width: 90%;
+        height: 400px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#empl{
+    position: absolute;
+    top:600px;
+    left: 200px;
+    
+}
+.emplo{
+    border-spacing: 50px 20px;
+}
+
+#help{
+     position: absolute;
+    top:1040px;
+    left: 500px;
+    text-align: center;
+}
+/* Кнопка, используемая для открытия контактной формы - фиксируется в нижней части страницы */
+.open-button {
+  background-color: #f0efeb;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.9;
+  width: 280px;
+  font-size: 20px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Добавить стили для контейнера формы */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+/*help button*/
+.open-button1 {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top:1000px;
+  left: 500px;
+  width: 280px;
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup1 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Добавить стили для контейнера формы */
+.form-container1 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Поля ввода полной ширины */
+.form-container1 input[type=text], .form-container1 input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container1 input[type=text]:focus, .form-container1 input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для кнопки отправить/войти */
+.form-container1 .btn1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container1 .cancel {
+  background-color: red;
+}
+
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container1 .btn1:hover, .open-button1:hover {
+  opacity: 1;
+}
+footer{
+	background-color: #212733;
+	color: white;
+	text-align: center;
+	margin: auto;
+	font-family: Open Sans;
+
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top:200px;
+  left: 650px;
+  width: 280px;
+  margin-top: 50%;
+}
+p{
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1em;
+ font-style: italic;
+
+
+}
